@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script src="validation1.js"></script>
+</head>
+<body>
+    <form>
+        <input type="password" id="psw" name="psw" required onkeyup="valpsw()" pattern=" /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]){8,}*$/">
+        <span id="errpsw"></span>
+
+    <!-- <input type="submit" value="Submit"> -->
+    </form>
+
+
+<div id="message">
+  <h3>Password must contain the following:</h3><br>
+  <!-- <span id="letter" >A <b>lowercase</b> letter</span><br><br>
+  <span id="capital" >A <b>capital (uppercase)</b> letter</span><br><br>
+  <span id="number" >A <b>number</b></span><br><br>
+  <span id="length" >Minimum <b>8 characters</b></span><br><br> -->
+  
+  <p id="letter" >A <b>lowercase</b> letter</p>
+  <p id="capital" >A <b>capital (uppercase)</b> letter</p>
+  <p id="number" >A <b>number</b></p>
+  <p id="length" >Minimum <b>8 characters</b></p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        var size=10;
+        var flag=true;
+        
+        function grow(){
+            requestAnimationFrame(grow)
+            if(size<=100 && flag){
+                abc.style.fontSize = `${size}px`;
+                abc.style.color="green";
+                size+=4;
+                if(size>100)
+                    flag=false;
+            }
+            else if(size>=10 && !flag){
+                abc.style.fontSize = size+'px';
+                abc.style.color = "red";
+                size-=4;
+                if(size<=10)
+                    flag=true;
+            }
+        }
+        grow();
+    </script>
+</head>
+<body>
+    <span id="abc"><center>Bhaktapur</center>
+    </span>
+</body>
+</html>
