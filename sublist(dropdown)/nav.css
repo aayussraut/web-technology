@@ -1,0 +1,51 @@
+*{
+    margin:0px auto;
+    padding:0px
+}
+
+.nav{
+    height:50px;
+    width:900px;
+    background-color: black;
+}
+
+.nav ul{
+    list-style:none
+}
+
+.nav li{
+    float: left;
+    line-height:25px;
+    position: relative;
+}
+
+.nav a{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    width: 148px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: red;
+    border: 2px solid yellow;
+}
+
+body{
+    background-image: url('lenna.jpg');
+    background-size:auto;
+}
+
+.nav ul ul{
+    visibility: hidden;
+    position: absolute;
+}
+
+.nav ul li:hover li{
+    visibility: visible;
+    background-color: violet;
+    opacity: 0.5;
+}
